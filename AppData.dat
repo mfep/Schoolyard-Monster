@@ -1,8 +1,13 @@
 ﻿<root dataType="Struct" type="Duality.DualityAppData" id="129723834">
   <appName dataType="String">MiniLD68</appName>
   <authorName dataType="String">Lorinc</authorName>
-  <customData />
-  <localUserData dataType="Bool">false</localUserData>
+  <customData dataType="Struct" type="Duality.Rect">
+    <H dataType="Float">1280</H>
+    <W dataType="Float">1920</W>
+    <X dataType="Float">-960</X>
+    <Y dataType="Float">-640</Y>
+  </customData>
+  <localUserData dataType="Bool">true</localUserData>
   <multisampleBackBuffer dataType="Bool">true</multisampleBackBuffer>
   <physicsFixedTime dataType="Bool">false</physicsFixedTime>
   <physicsVelThreshold dataType="Float">0.8333333</physicsVelThreshold>
@@ -12,7 +17,7 @@
   <startScene dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Scene]]">
     <contentPath dataType="String">Data\MainScene.Scene.res</contentPath>
   </startScene>
-  <version dataType="UInt">2</version>
+  <version dataType="UInt">77</version>
   <websiteUrl dataType="String"></websiteUrl>
 </root>
 <!-- XmlFormatterBase Document Separator -->

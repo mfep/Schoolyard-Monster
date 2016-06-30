@@ -101,7 +101,7 @@
             <value dataType="Enum" type="Duality.Input.Key" name="Left" value="47" />
           </item>
         </m_slots>
-        <m_version dataType="Int">1</m_version>
+        <m_version dataType="Int">5</m_version>
       </associatedKeys>
       <ButtonChanged dataType="Delegate" type="System.Action" id="3416008032" multi="true">
         <method dataType="ObjectRef">411997508</method>
