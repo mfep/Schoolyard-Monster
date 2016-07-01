@@ -113,6 +113,34 @@
         </invocationList>
       </ButtonChanged>
     </Left>
+    <Steal dataType="Struct" type="MFEP.Duality.Plugins.InputPlugin.VirtualButton" id="2795227297">
+      <_x003C_Name_x003E_k__BackingField dataType="String">Steal</_x003C_Name_x003E_k__BackingField>
+      <associatedKeys dataType="Struct" type="System.Collections.Generic.HashSet`1[[Duality.Input.Key]]" id="3128982074">
+        <m_buckets dataType="Array" type="System.Int32[]" id="337980672">1, 0, 0</m_buckets>
+        <m_comparer dataType="Struct" type="System.Collections.Generic.EnumEqualityComparer`1[[Duality.Input.Key]]" id="3204518350" />
+        <m_count dataType="Int">1</m_count>
+        <m_freeList dataType="Int">-1</m_freeList>
+        <m_lastIndex dataType="Int">1</m_lastIndex>
+        <m_siInfo />
+        <m_slots dataType="Array" type="System.Collections.Generic.HashSet`1+Slot[[Duality.Input.Key]][]" id="1737371548" length="3">
+          <item dataType="Struct" type="System.Collections.Generic.HashSet`1+Slot[[Duality.Input.Key]]">
+            <hashCode dataType="Int">51</hashCode>
+            <next dataType="Int">-1</next>
+            <value dataType="Enum" type="Duality.Input.Key" name="Space" value="51" />
+          </item>
+        </m_slots>
+        <m_version dataType="Int">1</m_version>
+      </associatedKeys>
+      <ButtonChanged dataType="Delegate" type="System.Action" id="2043499194" multi="true">
+        <method dataType="ObjectRef">411997508</method>
+        <target dataType="Struct" type="MFEP.Duality.Plugins.InputPlugin.InputManager+&lt;&gt;c__DisplayClass8_0" id="1299873152">
+          <button dataType="ObjectRef">2795227297</button>
+        </target>
+        <invocationList dataType="Array" type="System.Delegate[]" id="3096357070">
+          <item dataType="ObjectRef">2043499194</item>
+        </invocationList>
+      </ButtonChanged>
+    </Steal>
   </body>
 </root>
 <!-- XmlFormatterBase Document Separator -->

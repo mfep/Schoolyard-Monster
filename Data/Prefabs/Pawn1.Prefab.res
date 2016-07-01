@@ -20,17 +20,17 @@
           <ignoreParent dataType="Bool">false</ignoreParent>
           <parentTransform />
           <pos dataType="Struct" type="Duality.Vector3">
-            <X dataType="Float">335.416656</X>
-            <Y dataType="Float">-152.083328</Y>
-            <Z dataType="Float">-2</Z>
+            <X dataType="Float">247.5</X>
+            <Y dataType="Float">-279.166656</Y>
+            <Z dataType="Float">-900</Z>
           </pos>
           <posAbs dataType="Struct" type="Duality.Vector3">
-            <X dataType="Float">335.416656</X>
-            <Y dataType="Float">-152.083328</Y>
-            <Z dataType="Float">-2</Z>
+            <X dataType="Float">247.5</X>
+            <Y dataType="Float">-279.166656</Y>
+            <Z dataType="Float">-900</Z>
           </posAbs>
-          <scale dataType="Float">0.2041005</scale>
-          <scaleAbs dataType="Float">0.2041005</scaleAbs>
+          <scale dataType="Float">1</scale>
+          <scaleAbs dataType="Float">1</scaleAbs>
           <vel dataType="Struct" type="Duality.Vector3" />
           <velAbs dataType="Struct" type="Duality.Vector3" />
         </item>
@@ -55,10 +55,10 @@
           <offset dataType="Int">0</offset>
           <pixelGrid dataType="Bool">false</pixelGrid>
           <rect dataType="Struct" type="Duality.Rect">
-            <H dataType="Float">350</H>
-            <W dataType="Float">350</W>
-            <X dataType="Float">-175</X>
-            <Y dataType="Float">-175</Y>
+            <H dataType="Float">64</H>
+            <W dataType="Float">64</W>
+            <X dataType="Float">-32</X>
+            <Y dataType="Float">-32</Y>
           </rect>
           <rectMode dataType="Enum" type="Duality.Components.Renderers.SpriteRenderer+UVMode" name="Stretch" value="0" />
           <sharedMat dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
@@ -91,13 +91,13 @@
                 <friction dataType="Float">0.3</friction>
                 <parent dataType="ObjectRef">1088157466</parent>
                 <position dataType="Struct" type="Duality.Vector2" />
-                <radius dataType="Float">128</radius>
+                <radius dataType="Float">30.5217342</radius>
                 <restitution dataType="Float">0.3</restitution>
                 <sensor dataType="Bool">false</sensor>
               </item>
             </_items>
             <_size dataType="Int">1</_size>
-            <_version dataType="Int">2</_version>
+            <_version dataType="Int">3</_version>
           </shapes>
         </item>
         <item dataType="Struct" type="SchoolYard.PawnController" id="80186296">

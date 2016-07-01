@@ -13,9 +13,13 @@ namespace SchoolYard
     [RequiredComponent(typeof(RigidBody))]
     public class PawnController : Component, ICmpUpdatable, ICmpCollisionListener, ICmpInitializable
     {
+        private readonly Vector2 exitPos = new Vector2(1007, -70);
+
         public float MovementSpeed { get; set; }
         public float Acceleration { get; set; }
         public int MaxDirChanges { get; set; }
+
+        private TimeSpan nextDirChangeTime;
 
         [DontSerialize] private RigidBody rb;
         private RigidBody RigidBody
@@ -46,6 +50,9 @@ namespace SchoolYard
 
         public void OnUpdate()
         {
+            if(Time.GameTimer > nextDirChangeTime) {
+                SetNewDestination();
+            }
             Move();
         }
 
@@ -55,10 +62,10 @@ namespace SchoolYard
             dest = random.NextVector2(levelRect);
             Start();
             currentNumOfDirChanges++;
-            if(currentNumOfDirChanges == numberOfDirChangesUnitlExit) {
-                dest = new Vector2(1026, 0);
+            if(currentNumOfDirChanges >= numberOfDirChangesUnitlExit) {
+                dest = exitPos;
             } else {
-                InvokeDelayed(SetNewDestination, 10000);
+                nextDirChangeTime = Time.GameTimer + TimeSpan.FromSeconds(5);
             }            
         }
 
@@ -81,18 +88,13 @@ namespace SchoolYard
         {
             if(context == InitContext.Activate) {
                 SetNewDestination();
-                numberOfDirChangesUnitlExit = random.Next(MaxDirChanges);
+                numberOfDirChangesUnitlExit = MaxDirChanges;
+                nextDirChangeTime = Time.GameTimer + TimeSpan.FromSeconds(5);
             }
         }
 
         public void OnShutdown(ShutdownContext context)
         {
-        }
-
-        private async void InvokeDelayed(Action action, int timeMS)
-        {
-            await Task.Delay(timeMS);
-            action();
         }
 
         private void Move()
@@ -120,6 +122,12 @@ namespace SchoolYard
         private void Start()
         {
             isStopped = false;
+        }
+
+        public void Steal()
+        {
+            nextDirChangeTime = Time.GameTimer + TimeSpan.FromDays(100);
+            dest = new Vector2(1007, -70);
         }
     }
 }
