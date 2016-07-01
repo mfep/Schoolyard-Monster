@@ -63,9 +63,11 @@
     <Compile Include="CorePlugin.cs" />
     <Compile Include="CharacterController.cs" />
     <Compile Include="Exit.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="ICameraController.cs" />
     <Compile Include="PawnController.cs" />
     <Compile Include="PawnSpawner.cs" />
+    <Compile Include="PlayerSoundController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmoothPositionThresholdCameraController.cs" />
     <Compile Include="StealController.cs" />

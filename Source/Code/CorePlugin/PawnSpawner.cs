@@ -17,7 +17,6 @@ namespace SchoolYard
         public int MaxSpawnIntervalMS { get; set; }        
         public ContentRef<Prefab>[] PawnPrefabs { get; set; }
         private Random random = new Random(DateTime.Now.Millisecond);
-        private Task waitTask;
         private TimeSpan nextSpawnTime;
 
         public void OnInit(InitContext context)

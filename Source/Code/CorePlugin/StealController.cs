@@ -18,6 +18,8 @@ namespace SchoolYard
         public ContentRef<Material> EffectMat { get; set; }
         public GameObject StealFXRenderer { get; set; }
 
+        public bool IsStealing { get; private set; }
+
         private float timeToSteal;
         private PawnController collidedPawnController = null;
 
@@ -43,6 +45,7 @@ namespace SchoolYard
         public void OnUpdate()
         {
             if (InputManager.IsButtonPressed("Steal") && collidedPawnController != null) {
+                IsStealing = true;
                 StealFXRenderer.Transform.MoveToAbs(collidedPawnController.GameObj.Transform.Pos);
                 timeToSteal -= 1f / 60f * Time.TimeMult;
                 if(timeToSteal < 0f) {
@@ -50,6 +53,7 @@ namespace SchoolYard
                 }
             } else {
                 timeToSteal = TimeToSteal;
+                IsStealing = false;
             }
             EffectMat.Res.SetUniform("angle", 1 - timeToSteal / TimeToSteal);            
         }
@@ -57,6 +61,7 @@ namespace SchoolYard
         private void Steal()
         {
             collidedPawnController.Steal();
+            GameObj.ParentScene.FindComponent<GameManager>().Steal();
             collidedPawnController = null;
             Log.Game.Write("STEAL");
         }
