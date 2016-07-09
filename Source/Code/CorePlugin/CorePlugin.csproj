@@ -65,6 +65,7 @@
     <Compile Include="Exit.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="ICameraController.cs" />
+    <Compile Include="MusicPlayer.cs" />
     <Compile Include="PawnController.cs" />
     <Compile Include="PawnSpawner.cs" />
     <Compile Include="PlayerSoundController.cs" />

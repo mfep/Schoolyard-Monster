@@ -495,6 +495,11 @@
                     </_x003C_StealSounds_x003E_k__BackingField>
                     <active dataType="Bool">true</active>
                     <gameobj dataType="ObjectRef">1962486086</gameobj>
+                    <random dataType="Struct" type="System.Random" id="1181161694">
+                      <inext dataType="Int">0</inext>
+                      <inextp dataType="Int">21</inextp>
+                      <SeedArray dataType="Array" type="System.Int32[]" id="1065027850">0, 1544124814, 634559591, 1899810750, 1835510438, 366436643, 1503175066, 328215849, 350406528, 1127829239, 2029347025, 700589792, 555521998, 1956849714, 1179732735, 1542013875, 642319029, 890792133, 775284818, 441895368, 62884336, 1084983452, 162811271, 1007257329, 1072803621, 759000060, 1951667713, 1666337773, 356809858, 1612281030, 615935298, 581219990, 1455021458, 214426167, 658762481, 886500346, 1185647748, 1169734021, 913996647, 528411248, 2010151811, 1470336405, 332638488, 1962424960, 279715338, 523366300, 434229783, 1952315888, 1325665689, 1254876636, 226077908, 684151839, 938767950, 1077801517, 384986757, 1884496929</SeedArray>
+                    </random>
                     <sc />
                     <se />
                   </item>
@@ -645,7 +650,7 @@
             <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="3938576575">
               <_items dataType="Array" type="Duality.Components.Physics.ShapeInfo[]" id="2605650350" length="16" />
               <_size dataType="Int">0</_size>
-              <_version dataType="Int">2362</_version>
+              <_version dataType="Int">2402</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapCollider" id="3065820130">
@@ -769,7 +774,7 @@
             <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="406001584">
               <_items dataType="Array" type="Duality.Components.Physics.ShapeInfo[]" id="2109946300" length="8" />
               <_size dataType="Int">0</_size>
-              <_version dataType="Int">1320</_version>
+              <_version dataType="Int">1344</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Duality.Plugins.Tilemaps.TilemapCollider" id="1859596979">
@@ -1845,6 +1850,45 @@
       </identifier>
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
       <name dataType="String">GameManager</name>
+      <parent />
+      <prefabLink />
+    </item>
+    <item dataType="Struct" type="Duality.GameObject" id="1188698545">
+      <active dataType="Bool">true</active>
+      <children />
+      <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="1484030931">
+        <_items dataType="Array" type="Duality.Component[]" id="822434406" length="4">
+          <item dataType="Struct" type="SchoolYard.MusicPlayer" id="2773441315">
+            <_x003C_Music_x003E_k__BackingField dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Sound]]">
+              <contentPath dataType="String">Data\sounds\music.Sound.res</contentPath>
+            </_x003C_Music_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">1188698545</gameobj>
+          </item>
+        </_items>
+        <_size dataType="Int">1</_size>
+        <_version dataType="Int">1</_version>
+      </compList>
+      <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1238613624" surrogate="true">
+        <header />
+        <body>
+          <keys dataType="Array" type="System.Object[]" id="1655318713">
+            <item dataType="Type" id="2565527246" value="SchoolYard.MusicPlayer" />
+          </keys>
+          <values dataType="Array" type="System.Object[]" id="2239605504">
+            <item dataType="ObjectRef">2773441315</item>
+          </values>
+        </body>
+      </compMap>
+      <compTransform />
+      <identifier dataType="Struct" type="System.Guid" surrogate="true">
+        <header>
+          <data dataType="Array" type="System.Byte[]" id="1541398843">qFHG+hwN5kib67E48A2M/w==</data>
+        </header>
+        <body />
+      </identifier>
+      <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+      <name dataType="String">MusicPlayer</name>
       <parent />
       <prefabLink />
     </item>
